@@ -1,0 +1,160 @@
+html{
+	height: 100%;
+}
+body {
+  font: 14px 'Lato', sans-serif;
+  height: 100%;
+}
+
+a {
+  color: #00B7FF;
+}
+/************************************************************************************************************/
+/* Navbar*/
+
+.title {
+	color: white;
+	font-size: 100px;
+	font-family: tangerine;
+	text-shadow: 2px 2px 5px white;
+	padding: 20px;
+	position: absolute;
+	left: 0px;
+}
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    min-height: 150px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    transition: .3s;
+}
+
+/* Float the list items side by side */
+ul.topnav li { }
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: .5s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #555;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+  ul.topnav li {float: left; position: relative;top: 130px;}
+  ul.topnav { display: block;}
+  ul.topnav li a.bars {
+  	position: relative;
+    bottom: 30px;
+}
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative; min-height: 370px}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 130px;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+/************************************************************************************************************/
+/************************************************************************************************************/
+/* main page */
+
+.mainpage-layout {
+	height: 80%;
+	background-image: url("../images/musicBg.jpg");
+	background-size: cover;
+}
+.mainpage {
+	height: auto;
+	width: 80%;
+	background: white;
+	margin: auto;
+	padding:
+	background-color: rgba(300,300,300,.95);
+	position: relative;
+	top: 2.5%;
+	text-align: center;
+	box-shadow: 0 0 10px 1px;
+}
+.mainpage h1 {
+	font-size: 35px;
+}
+.mainpage p {
+	font-size: 25px;
+}
+.banner {
+	height: 50%;
+	background-color: #333;
+	color: white;
+	padding: 5%;
+}
+.latest p {
+	font-size: 23px;
+	padding: 10px;
+}
+
+@media screen and (max-width: 680px){
+	.mainpage h1 {
+		font-size: 25px;
+	}
+	.mainpage p {
+		font-size: 16px;
+	}
+}
+
+
+
+/************************************************************************************************************/
+/************************************************************************************************************/
+/* footer */
+
+footer {
+	width: 100%;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	background-color: #333;
+	padding: 10px;
+}
+
+
+/************************************************************************************************************/
+/************************************************************************************************************/
+
+
+
+/************************************************************************************************************/
+/************************************************************************************************************/
